@@ -31,7 +31,7 @@ using namespace std;
 
 
 //Name of image texture
-string textureName = "/Users/andrewgazelka/Projects/School/5607-cg/hw/proj1/face.ppm";
+string textureName = "face.ppm";
 
 int vertexCount = TRIANGLE ? 3 : 4;
 
