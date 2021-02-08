@@ -14,8 +14,25 @@ Executable compiled for MacOS Big Sur
 | Dragging on corner | Expands/Contracts shape |
 
 ## Difficulties
+The project was rather straight-forward. However, I did encounter a couple of difficulties.
 
-TODO
+### Setting up CMake
+First, I wanted to setup the project with CMake and my brew-installed SDL-2. I am not super familiar with CMake, but I eventually 
+figured out how to reference SDL-2 without giving an absolute path with the `find_package(SDL2 REQUIRED)` command. 
+
+### SDL headers
+Still, I could not get the project to compile because the `#include <SDL2/SDL.h>` header is not a universal import for SDL and did not work on 
+MacOS. Instead I had to change it to `#include "SDL.h"`.
+
+### inline functions
+I didn't want all of my code in the same file. Many of the library functions were defined in header files and some did not have the `inline` keyword which led to linking errors.
+
+
+
+## Extensions
+- ✅ Animating the square
+- ✅ Changing something visually when the user presses the keyboard
+- ✅ Supporting a triangle in addition to a square
 
 ## Code
 - [Zipped](project.zip)
