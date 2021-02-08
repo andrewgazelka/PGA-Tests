@@ -21,3 +21,13 @@ TODO
 - [Zipped](project.zip)
 - [Executable](bin/proj1)
 - [Source](source_code)
+
+## Compiling
+```
+mkdir build
+cd build
+cmake ..
+```
+
+## Running
+Execute the compiled binary. Make sure that `face.ppm` is in the current working directory.
