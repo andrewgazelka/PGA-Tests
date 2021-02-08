@@ -25,7 +25,7 @@ Still, I could not get the project to compile because the `#include <SDL2/SDL.h>
 MacOS. Instead I had to change it to `#include "SDL.h"`.
 
 ### inline functions
-I didn't want all of my code in the same file. Many of the library functions were defined in header files and some did not have the `inline` keyword which led to linking errors.
+I didn't want all of my code in the same file. Several of the library functions were defined in header files and some did not have the `inline` keyword which led to linking errors. To fix this, I needed to add the `inline` keyword to prevent the compiler thinking there were multiple definitions.
 
 
 
